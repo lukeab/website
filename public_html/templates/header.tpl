@@ -11,10 +11,12 @@
     <!-- Le styles -->
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
+	{literal}
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
+	{/literal}
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -27,6 +29,18 @@
   </head>
 
   <body>
+	 <div id="fb-root"></div>
+	<script>
+	{literal}
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	{/literal}
+	</script>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
