@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Europe/London');
 require('../libs/Smarty.class.php');
 
 $smarty = new Smarty;
